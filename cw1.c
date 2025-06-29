@@ -708,7 +708,7 @@ void blur(BMP* bmp, int size){
                     if(dx < 0){
                         dx = -1 * dx;
                     }
-                    else if (dy >= img_width){
+                    else if (dx >= img_width){
                         dx = 2*img_width - dx - 2;
                     }
                     r += bmp->img[dy][dx].r;
